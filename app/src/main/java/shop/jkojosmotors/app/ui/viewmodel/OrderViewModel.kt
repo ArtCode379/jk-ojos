@@ -2,6 +2,7 @@ package shop.jkojosmotors.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import shop.jkojosmotors.app.data.entity.OrderEntity
 import shop.jkojosmotors.app.data.repository.OrderRepository
 import shop.jkojosmotors.app.ui.state.DataUiState
@@ -10,8 +11,10 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class OrderViewModel(
+@HiltViewModel
+class OrderViewModel @Inject constructor(
     private val orderRepository: OrderRepository,
 ) : ViewModel() {
     private val _ordersState =

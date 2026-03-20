@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.ProductAppJOJSA" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.ProductAppJOJSA" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/dark_navy</item>
+        <item name="android:navigationBarColor">@color/dark_navy</item>
+    </style>
 </resources>

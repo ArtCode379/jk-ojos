@@ -21,7 +21,7 @@ import shop.jkojosmotors.app.ui.composable.navigation.AppNavHost
 import shop.jkojosmotors.app.ui.composable.navigation.NavRoute
 import shop.jkojosmotors.app.ui.state.DataUiState
 import shop.jkojosmotors.app.ui.viewmodel.AppViewModel
-import org.koin.androidx.compose.koinViewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 import kotlin.reflect.KClass
 
 private val navigationItems: List<BottomNavItem> = listOf(
@@ -61,7 +61,7 @@ private val bottomBarHiddenScreens: List<KClass<out NavRoute>> = listOf(
 
 @Composable
 fun AppRoot(
-    viewModel: AppViewModel = koinViewModel()
+    viewModel: AppViewModel = hiltViewModel()
 ) {
     val cartPopulatedState by viewModel.cartPopulatedState.collectAsState()
     val itemsInCartState by viewModel.itemsInCartState.collectAsState()

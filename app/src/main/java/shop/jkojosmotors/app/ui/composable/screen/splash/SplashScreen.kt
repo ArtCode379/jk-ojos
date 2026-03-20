@@ -6,12 +6,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import shop.jkojosmotors.app.ui.viewmodel.SplashViewModel
-import org.koin.androidx.compose.koinViewModel
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @Composable
 fun SplashScreen(
     modifier: Modifier = Modifier,
-    viewModel: SplashViewModel = koinViewModel(),
+    viewModel: SplashViewModel = hiltViewModel(),
     onNavigateToHomeScreen: () -> Unit,
     onNavigateToOnboarding: () -> Unit,
 ) {

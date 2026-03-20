@@ -2,13 +2,16 @@ package shop.jkojosmotors.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import shop.jkojosmotors.app.data.repository.OnboardingRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import javax.inject.Inject
 
-class SplashViewModel(
+@HiltViewModel
+class SplashViewModel @Inject constructor(
     private val onboardingRepository: OnboardingRepository,
 ) : ViewModel() {
     val onboardedState: StateFlow<Boolean> =
@@ -19,5 +22,4 @@ class SplashViewModel(
                 started = SharingStarted.Eagerly,
                 initialValue = false
             )
-
 }

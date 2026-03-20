@@ -2,6 +2,7 @@ package shop.jkojosmotors.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import shop.jkojosmotors.app.data.repository.CartRepository
 import shop.jkojosmotors.app.ui.state.DataUiState
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -9,8 +10,10 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class AppViewModel(
+@HiltViewModel
+class AppViewModel @Inject constructor(
     private val cartRepository: CartRepository,
 ) : ViewModel() {
     private val _cartPopulatedState =
@@ -18,7 +21,7 @@ class AppViewModel(
     val cartPopulatedState: StateFlow<DataUiState<Unit>>
         get() = _cartPopulatedState.asStateFlow()
 
-    private val _itemsInCartState = MutableStateFlow<Int>(0)
+    private val _itemsInCartState = MutableStateFlow(0)
     val itemsInCartState: StateFlow<Int>
         get() = _itemsInCartState.asStateFlow()
 

@@ -2,6 +2,7 @@ package shop.jkojosmotors.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import shop.jkojosmotors.app.data.model.Product
 import shop.jkojosmotors.app.data.repository.CartRepository
 import shop.jkojosmotors.app.data.repository.ProductRepository
@@ -11,8 +12,10 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ProductDetailsViewModel(
+@HiltViewModel
+class ProductDetailsViewModel @Inject constructor(
     private val productRepository: ProductRepository,
     private val cartRepository: CartRepository,
 ) : ViewModel() {

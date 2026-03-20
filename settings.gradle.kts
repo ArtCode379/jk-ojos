@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Product App Skeleton"
+rootProject.name = "JK Ojos"
 include(":app")

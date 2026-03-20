@@ -1,11 +1,21 @@
 <resources>
-    <string name="app_name">Product App JOJSA</string>
+    <string name="app_name">J&amp;K Ojo\'s</string>
 
     <!-- shared -->
     <string name="price">£%1$.2f</string>
 
+    <!-- categories -->
+    <string name="category_all">All</string>
+    <string name="category_engine_parts">Engine Parts</string>
+    <string name="category_brakes">Brakes</string>
+    <string name="category_suspension">Suspension</string>
+    <string name="category_interior">Interior</string>
+    <string name="category_exterior">Exterior</string>
+    <string name="category_accessories">Accessories</string>
+    <string name="category_oils_and_fluids">Oils &amp; Fluids</string>
+
     <!-- top bar titles -->
-    <string name="top_bar_home_title">Home/App Title</string>
+    <string name="top_bar_home_title">J&amp;K Ojo\'s</string>
     <string name="top_bar_cart_title">Cart</string>
     <string name="top_bar_checkout_title">Checkout</string>
     <string name="top_bar_orders_title">Orders</string>
@@ -19,27 +29,27 @@
     <string name="bottom_bar_nav_item_settings_title">Settings</string>
 
     <!-- onboarding screen -->
-    <string name="page_1_title">Strategic Planning</string>
-    <string name="page_2_title">Operational Excellence</string>
-    <string name="page_3_title">Change Management</string>
-    <string name="page_1_description">Comprehensive strategic analysis and planning that aligns your business objectives with market opportunities and organizational capabilities.</string>
-    <string name="page_2_description">Process optimization and operational improvement strategies that enhance efficiency, reduce costs, and drive sustainable performance.</string>
-    <string name="page_3_description">Expert guidance through organizational transformation</string>
+    <string name="page_1_title">Quality Auto Parts</string>
+    <string name="page_2_title">Easy Ordering</string>
+    <string name="page_3_title">Collect In Store</string>
+    <string name="page_1_description">Browse our wide range of premium auto parts and accessories for all major vehicle makes and models.</string>
+    <string name="page_2_description">Add items to your cart and reserve your order in just a few taps. Simple, fast, and convenient.</string>
+    <string name="page_3_description">Collect your reserved order at our store within 24 hours. No waiting, no hassle.</string>
     <string name="next_button_title">Next</string>
-    <string name="start_button_title">Start</string>
+    <string name="start_button_title">Get Started</string>
     <string name="skip_button_title">Skip</string>
 
-    <!-- home/products screen   -->
+    <!-- home/products screen -->
     <string name="products_state_empty_primary_text">No products available</string>
 
-    <!-- product details screen   -->
+    <!-- product details screen -->
     <string name="product_details_state_empty_primary_text">No information available for this product</string>
     <string name="product_image_description">Product image</string>
     <string name="button_add_to_cart_label">Add to Cart</string>
 
     <!-- cart screen -->
     <string name="cart_state_empty_primary_text">Nothing in your cart yet</string>
-    <string name="button_place_order_label">Place Order • £%1$.2f</string>
+    <string name="button_place_order_label">Reserve Order · £%1$.2f</string>
     <string name="increase_quantity_icon_description">Increase quantity</string>
     <string name="decrease_quantity_icon_description">Decrease quantity</string>
     <string name="delete_item_icon_description">Delete item</string>
@@ -53,24 +63,37 @@
     <string name="checkout_text_field_first_name">First Name</string>
     <string name="checkout_text_field_last_name">Last Name</string>
     <string name="checkout_text_field_email">Email</string>
-    <string name="button_confirm_order_label">Confirm Order</string>
+    <string name="button_confirm_order_label">Confirm Reservation</string>
 
     <!-- checkout dialog -->
     <string name="checkout_dialog_title">Order Confirmed</string>
-    <string name="checkout_dialog_order_number">Order number: #%1$s</string>
-    <string name="checkout_dialog_processing_message">Your order will be processed within 24 hours.</string>
+    <string name="checkout_dialog_order_number">Order #%1$s</string>
+    <string name="checkout_dialog_processing_message">Please collect your order at our store within 24 hours</string>
+    <string name="checkout_dialog_view_orders">View Orders</string>
 
     <!-- settings screen -->
     <string name="settings_screen_company_label">Company</string>
     <string name="settings_screen_version_label">Version</string>
     <string name="settings_screen_customer_support_label">Customer Support</string>
-    <string name="company_name">Company Name</string>
+    <string name="company_name">J&amp;K OJO\'S LTD</string>
     <string name="app_version">1.0.0</string>
-    <string name="customer_support_link">https://website.org/</string>
+    <string name="customer_support_link">http://jkojostore.uk</string>
 
     <!-- clear cart dialog -->
     <string name="clear_cart_dialog_title">Clear cart?</string>
-    <string name="clear_card_dialog_text">Are you sure you want to remove all items from your cart?</string>
+    <string name="clear_cart_dialog_text">Are you sure you want to remove all items from your cart?</string>
     <string name="button_confirm_clear_cart_title">Confirm</string>
     <string name="button_cancel_clear_cart_title">Cancel</string>
+
+    <!-- carousel tips -->
+    <string name="carousel_tip_1_title">Regular Oil Changes</string>
+    <string name="carousel_tip_1_body">Change your engine oil every 5,000–10,000 miles to keep your engine running smoothly and extend its lifespan.</string>
+    <string name="carousel_tip_2_title">Check Your Brakes</string>
+    <string name="carousel_tip_2_body">Inspect brake pads and discs regularly. Squealing or grinding noises mean it\'s time for a replacement.</string>
+    <string name="carousel_tip_3_title">Tyre Pressure Matters</string>
+    <string name="carousel_tip_3_body">Check tyre pressure monthly. Properly inflated tyres improve fuel economy and handling safety.</string>
+    <string name="carousel_tip_4_title">Protect Your Interior</string>
+    <string name="carousel_tip_4_body">Use quality car mats and seat covers to keep your interior looking new and protect resale value.</string>
+    <string name="carousel_tip_5_title">LED Upgrades</string>
+    <string name="carousel_tip_5_body">Upgrade to LED bulbs for brighter visibility and longer bulb life. A simple swap that makes a big difference.</string>
 </resources>
